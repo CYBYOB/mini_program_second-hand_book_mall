@@ -1,0 +1,19 @@
+/* pages/login/login.wxss */
+.top_info {
+  display: flex;
+  justify-content: center;
+  margin: 100rpx 40rpx 20rpx;
+}
+.top_info image {
+  width: 300rpx;
+  height: 200rpx;
+  margin: 0 auto;
+}
+
+/* 授权提示信息 */
+.grant {
+  margin: 20rpx 50rpx;
+}
+.grant_btn .refuse,.accept {
+  background-color: red
+}

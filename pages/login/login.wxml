@@ -1,0 +1,26 @@
+<!--pages/login/login.wxml-->
+<view class='page'>
+  <view class='border_bottom top_info'>
+    <image class='logo' src='../../images/login/logo.png'></image>
+  </view>
+
+  <view class='grant'>
+    <view>昨日在耳小程序申请获得以下权限</view>
+    <view>获取你的公开信息（昵称、头像、地区以及性别）</view>
+    <view class='grant_btn'>
+      <!-- <button class='refuse'>拒绝</button> -->
+      <button class='accept' open-type='getUserInfo' bindgetuserinfo='f_get_user_info'>允许</button>
+    </view>
+  </view>
+
+
+  <!-- <button
+    wx:if="{{canIUse}}"
+    open-type="getUserInfo"
+    bindgetuserinfo="bindGetUserInfo"
+  >
+    授权登录
+  </button>
+  <view wx:else>请升级微信版本</view> -->
+
+</view>
