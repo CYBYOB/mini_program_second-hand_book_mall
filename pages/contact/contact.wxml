@@ -1,0 +1,4 @@
+<!--pages/contact/contact.wxml-->
+<view class='page'>
+  <view class='contact'>电话：13227839870 QQ:1520112971</view>
+</view>
