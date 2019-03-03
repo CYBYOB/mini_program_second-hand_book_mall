@@ -1,0 +1,32 @@
+<!--pages/my_address/my_address.wxml-->
+<view class='page'>
+  <!-- <view class='my_address_list'>
+    <view>从数据库中获取到的查询列表：</view>
+    <block wx:for='{{my_address_list}}'>
+      <view class='my_address_item'>用户id:{{item.user_id}}，用户名：{{item.name}}，电话：{{item.phone}}，地址：{{item.address}}，更新的日期：{{item.date}}</view>
+    </block>
+  </view> -->
+
+  <view class='address_list'>
+    <block wx:for='{{address_list}}'>
+      <view class='address_item'>
+
+        <image src='{{item.src}}'></image>
+        <view class='info'>
+          <view class='person_info'>
+            <text>{{item.name}}</text>
+            <text>{{item.phone}}</text>
+            <text class='default'>{{item.default_text}}</text>
+          </view>
+
+          <view class='address_info'>
+            <text>{{item.address}}</text>
+          </view>
+        </view>
+
+        <view id='{{index}}' class='edit' bindtap='f_edit_address'>编辑</view>
+
+      </view>
+    </block>
+  </view>
+</view>

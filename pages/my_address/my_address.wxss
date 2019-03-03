@@ -1,0 +1,43 @@
+/* pages/my_address/my_address.wxss */
+.my_address_item {
+  border: 1rpx red solid;
+  margin: 25rpx;
+}
+
+
+/* 新的 css */
+.address_item {
+  border-bottom: 3rpx #eee solid;
+  padding: 25rpx;
+  margin: 20rpx 0;
+}
+.address_item image {
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: middle;
+}
+.address_item .info,.edit {
+  display: inline-block;
+  vertical-align: middle;
+}
+.address_item .info {
+  width: 500rpx;
+  height: 120rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.address_item .edit {
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 10rpx;
+  border-left: 2rpx #707070 solid;
+}
+.info text {
+  line-height: 60rpx;
+  margin: 20rpx;
+}
+
+.person_info .default {
+  color: #ff9500;
+  background-color: rgba(255, 149, 0, 0.2);
+}
