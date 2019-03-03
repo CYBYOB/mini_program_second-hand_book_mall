@@ -9,6 +9,22 @@
 1、`效果图1`:
 ![](https://github.com/CYBYOB/mini_program_second-hand_book_mall/tree/master/effect_of_screenshots/1.gif)
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 2、效果图2:
 ![](https://github.com/CYBYOB/mini_program_second-hand_book_mall/blob/master/effect_of_screenshots/2.gif)
 
