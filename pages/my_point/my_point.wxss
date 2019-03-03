@@ -1,0 +1,5 @@
+/* pages/my_point/my_point.wxss */
+.my_point {
+  border: 1rpx red solid;
+  margin: 25rpx;
+}

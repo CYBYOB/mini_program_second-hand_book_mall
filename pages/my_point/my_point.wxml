@@ -1,0 +1,5 @@
+<!--pages/my_point/my_point.wxml-->
+<view class='page'>
+  <view>从数据库中获取到的查询结果：</view>
+  <view class='my_point'>我的积分为：{{point}}</view>
+</view>
