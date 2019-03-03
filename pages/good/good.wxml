@@ -1,0 +1,44 @@
+<!--pages/good/good.wxml-->
+<view class='page'>
+  <!-- 顶部的商品详情 -->
+  <view class='good'>
+    <view class='good_image' style="background-image:url({{good.src}})">
+      <text>1/5</text>
+    </view>
+    <view class='good_text'>
+      <view class='price_sale'>
+        <text class='now_price'>￥{{good.now_price}}</text>
+        <text class='pre_price_all'>原价:<text class='pre_price'>{{good.pre_price}}</text></text>
+        <text class='sale_num'>网销{{good.sale_num}}本</text>
+      </view>
+      <view class='title'>{{good.name}}</view>
+    </view>
+  </view>
+
+  <!-- 小间隙 -->
+  <view class='gap'></view>
+
+  <!-- 公告栏 tip -->
+  <view class='tip' style='color: #666;padding: 20rpx;'>公告：昨日在耳商场小程序所有书籍均有由老综二楼昨日书屋发货，新旧程度略有不同。若有特殊要求，请扫下后备注或私发客服，谢谢理解。
+  </view>
+
+  <view class='other'>
+    <image src='../../images/good/other/line.png'></image>
+    <text>其他</text>
+    <image src='../../images/good/other/line.png'></image>
+  </view>
+
+  <view class='other_image'><image src='{{other_image}}'></image></view>
+
+  <view class='fix_bottom'>
+    <view id='bottom_1' class='service' bindtap='f_contact_collect_buy'>
+      <image id='bottom_1' src='../../images/good/icon/service.png'></image>
+      <view id='bottom_1'>客服</view>
+    </view>
+    <view id='bottom_2' class='collect' bindtap='f_contact_collect_buy'>
+      <image id='bottom_2' src='../../images/good/icon/collect.png'></image>
+      <view id='bottom_2'>收藏</view>
+    </view>
+    <view id='bottom_3' class='buy' bindtap='f_contact_collect_buy'>立即购买</view>
+  </view>
+</view>

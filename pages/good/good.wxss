@@ -1,0 +1,90 @@
+/* pages/good/good.wxss */
+/* 顶部商品详情 */
+.good {
+  width: 750rpx;
+  height: 550rpx;
+  border: 1rpx #eee solid;
+}
+.good .good_image {
+  position: relative;
+  height: 400rpx;
+}
+.good_image text {
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  background-color: #999;
+}
+/* 商品下面详细介绍的文字不是居左显示 */
+.good .good_text {
+  margin: 20rpx;
+}
+.price_sale .now_price {
+  color: #ff9500;
+  font-size: 50rpx;
+}
+.price_sale .pre_price_all,.sale_num {
+  color: #999;
+  font-size: 30rpx;
+}
+.price_sale .pre_price_all {  
+  margin: 0 20rpx;
+}
+.pre_price_all .pre_price {
+  text-decoration: line-through;
+}
+
+/* 公告栏 tip */
+.tip {
+  color: #666;
+  padding: 20rpx;
+  border: 1rpx #eee solid;
+}
+
+/* 下面“其他” */
+.other {
+  text-align: center;
+  margin: 20rpx 0;
+}
+.other image {
+  width: 180rpx;
+  height: 2rpx;
+  vertical-align: middle;
+  margin: 0 50rpx;
+}
+
+/*  */
+.other_image image {
+  width: 710rpx;
+  height: 1500rpx;
+  margin: 20rpx;
+}
+
+/* 底部固定的内容 */
+.fix_bottom {
+  position: fixed;
+  height: 150rpx;
+  bottom: 0;
+  background-color: #fff;
+}
+/* 顶部的小图标都是一样大 */
+.fix_bottom image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.fix_bottom .service,.collect,.buy {
+  display: inline-block;
+  text-align: center;
+}
+.fix_bottom .service,.collect,.buy {
+  padding: 25rpx 50rpx;
+}
+.fix_bottom .buy {
+  width: 200rpx;
+  border-radius: 50rpx;
+  background-color: #ff9500;
+}
