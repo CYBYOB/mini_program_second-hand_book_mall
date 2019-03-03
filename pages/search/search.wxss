@@ -1,0 +1,68 @@
+/* pages/search/search.wxss */
+.page {
+  margin: 0 30rpx;
+}
+.search {
+  background-color: #e4e4e4;
+  border-radius: 30rpx;
+  /* border: 3rpx #eee solid;  */
+}
+.search icon,input {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 20rpx;
+}
+.search input {
+  width: 435rpx;
+  /* background-color: red; */
+}
+.search .search_btn {
+  line-height: 56rpx;
+  color: #fff;
+  background-color: #ff9500;
+  padding: 0 30rpx;
+  border-radius: 30rpx;
+}
+
+/* 历史记录 */
+.history {
+  /* margin: 30rpx 0; */
+  /* border: 5rpx red solid; */
+}
+.history .history_delete {
+  margin: 30rpx 0 10rpx 0;
+}
+.history_delete text,icon {
+  vertical-align: middle;
+}
+
+/* 历史记录列表 */
+.history_list {
+  /* margin: 30rpx 0; */
+}
+.history_list .history_item {
+  display: inline-block;
+  color: #666;
+  background-color: #eee;
+  padding: 10rpx 20rpx;
+  margin: 10rpx;
+  border-radius: 40rpx;
+}
+
+.search_image {
+  width: 50rpx;
+  height: 30rpx;
+  margin-left: 350rpx;
+}
+.logo_image {
+  position: fixed;
+  left: 180rpx;
+  bottom: 250rpx;
+  width: 400rpx;
+  height: 200rpx;
+  opacity: 0.2;
+}
+
+.result_list .result_item {
+  margin: 20rpx 0;
+}

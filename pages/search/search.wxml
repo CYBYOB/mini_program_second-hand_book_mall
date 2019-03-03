@@ -1,0 +1,37 @@
+<!--pages/search/search.wxml-->
+<view class='page'>
+  <view class='search'>
+    <icon type='search' size='40rpx'></icon>
+    <input placeholder='请输入搜索的关键词' value='{{keyword}}' bindinput='f_keyword_input' bindconfirm='f_keyword_comfirm'></input>
+    <text class='fr search_btn' bindtap='f_keyword_comfirm'>搜索</text>
+    <view class='clear'></view>
+  </view>
+
+  <!-- 中间的历史记录 -->
+  <view class='history'>
+    <view class='history_delete'>
+      <text>历史记录</text>
+      <icon class='fr' type='clear'></icon>
+      <view class='clear'></view>
+    </view>
+
+    <view class='history_list'>
+      <block wx:for='{{history_list}}'>
+        <view class='history_item' bindtap='f_history_item_tap'>{{item}}</view>
+      </block>
+    </view>
+  </view>
+
+  <!-- 展开更多历史搜索记录的图标和 logo -->
+  <image class='search_image' src='../../images/search/more.png'></image>
+  <image class='logo_image' src='../../images/search/logo.png'></image>
+
+  <!-- 搜索结果 -->
+  <view class='result_list'>
+    <block wx:for='{{result_list}}'>
+      <view class='result_item'>
+        id: {{item.id}}, 书名: {{item.name}}, 图片地址: {{item.src}}, 所属学院: {{item.academic_id}}, 原价: {{item.pre_price}},现价:{{item.sale_num}}
+      </view>
+    </block>
+  </view>
+</view>
