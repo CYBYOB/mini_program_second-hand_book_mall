@@ -1,0 +1,49 @@
+/* pages/collect/collect.wxss */
+
+.top {
+  display: flex;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #fff;
+  font-size: 33rpx;
+  background-color: #ff9500;
+}
+.top .my_collect {
+  margin: 0 500rpx 0 25rpx;
+}
+
+/* 收藏列表 */
+.collect_list_item {
+  /* width: 750rpx; */
+  height: 400rpx;
+  padding: 20rpx;
+
+  /* 添加下面样式说明是已成功对接数据库里面的数据 */
+  border: 1rpx red solid;
+  margin: 25rpx;
+}
+.collect_list_item .mini_circle {
+  width: 50rpx;
+  height: 50rpx;
+  /* vertical-align: middle; */
+}
+.collect_list_item .good_image {
+  width: 200rpx;
+  height: 200rpx;
+}
+.collect_list_item .more {
+  display: inline-block;
+  width: 450rpx;
+}
+.more .bottom {
+  display: flex;
+}
+.more .price {
+  color: #ff9500;
+
+  
+}
+.more .minus_add image {
+  width: 50rpx;
+  height: 50rpx;
+}

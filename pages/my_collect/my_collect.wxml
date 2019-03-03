@@ -1,0 +1,31 @@
+<!--pages/collect/collect.wxml-->
+<view class='page'>
+  <!-- 顶部的 “我的收藏” 和 “管理” -->
+  <view class='top'>
+    <view class='my_collect'>我的收藏</view>
+    <view class='manage'>管理</view>
+  </view>
+
+  <!-- 收藏的主体部分 -->
+  <view class='collect_list'>
+    <view>从数据库中获取到的查询列表：</view>
+    <block wx:for='{{collect_list}}'>
+      <view class='collect_list_item'>
+        <image class='mini_circle' src='../../images/collect/mini_circle.png'></image>
+        <image class='good_image' src='{{item.src}}'></image>
+        <view class='more'>
+          <view class='title'>{{item.name}}</view>
+          <view class='bottom'>
+            <text class='price'>￥{{item.now_price}}</text>
+            <!-- 加减编辑区 -->
+            <view class='minus_add'>
+              <image src='../../images/collect/minus.png'></image>
+              <text>{{item.num}}</text>
+              <image src='../../images/collect/add.png'></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
