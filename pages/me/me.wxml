@@ -1,0 +1,21 @@
+<!--pages/me/me.wxml-->
+<view class='page'>
+  <!-- 顶部个人信息栏 -->
+  <view class='my_info'>
+    <view class='detail'>
+      <image src='{{my_info.src}}'></image>
+      <view class='id'>id:{{my_info.id}}</view>
+    </view>
+  </view>
+
+  <!-- 我的相关功能入口列表 -->
+  <view class='my_list'>
+    <block wx:for='{{my_list}}'>  
+      <!-- 根据点击的不同，进入不同的"我的"相关页面 -->
+      <view id='{{item.id}}' class='my_list_item' bindtap='f_my_page'>
+        <image id='{{item.id}}' src='{{item.src}}'></image>
+        <text id='{{item.id}}' class='title'>{{item.title}}</text>
+      </view>
+    </block>
+  </view>
+</view>

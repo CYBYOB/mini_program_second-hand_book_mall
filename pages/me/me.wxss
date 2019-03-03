@@ -1,0 +1,42 @@
+/* pages/me/me.wxss */
+/* 顶部的个人信息栏 */
+.my_info {
+  width: 750rpx;
+  height: 300rpx;
+  background-color: #FF9500;
+}
+.my_info .detail {
+  width: 350rpx;
+  height: 200rpx;
+  padding: 50rpx 200rpx;
+  text-align: center;
+}
+.detail image {
+  width: 120rpx;
+  height: 120rpx;
+}
+.detail .id {
+  color: #fff;
+  font-size: 35rpx;
+  font-weight: 200;
+}
+
+/* 我的相关功能入口列表 */
+.my_list {
+  /* margin-top: 10rpx; */
+}
+.my_list .my_list_item {
+  width: 750rpx;
+  height: 100rpx;
+  border: 1rpx #eee solid;
+}
+.my_list_item image {
+  vertical-align: middle;
+  width: 50rpx;
+  height: 50rpx;
+  padding: 25rpx;
+}
+.my_list_item .title {
+  vertical-align: middle;
+  display: inline-block;
+}
