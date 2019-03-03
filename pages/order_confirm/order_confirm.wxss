@@ -1,0 +1,119 @@
+/* pages/order_confirm/order_confirm.wxss */
+.page {
+  /* margin: 0 30rpx; */
+  /* background-color: #eee; */
+}
+/* 顶部收货信息 */
+.delivery {
+  width: 750rpx;
+  /* 不设置高度，方便文字过多也能正常居中显示 */
+  /* height: 450rpx; */
+}
+.delivery .address_image{
+  width: 200rpx;
+  height: 200rpx;
+  vertical-align: middle;
+}
+.delivery .delivery_info {
+  display: inline-block;
+  width: 550rpx;
+  vertical-align: middle;
+}
+.delivery_info input {
+  display: inline-block;
+}
+.delivery_info .name,.phone,.address,.tip {
+  margin: 30rpx;
+}
+.delivery_info .tip {
+  color: #ff9500;
+}
+
+/* 所购买书籍的详情 */
+.good_list_item {
+  height: 350rpx;
+  /* border: 2rpx #eee solid; */
+}
+.good_list_item .good_image {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 25rpx;
+  vertical-align: middle;
+}
+.good_list_item .detail {
+  position: relative;
+  display: inline-block;
+  width: 495rpx;
+  height: 250rpx;
+  vertical-align: middle;
+}
+.good_list_item .detail .title,.price,.num {
+  position: absolute;
+}
+.good_list_item .detail .title {
+  top: 25rpx;
+}
+.good_list_item .detail .price {
+  bottom: 25rpx;
+}
+.good_list_item .detail .num {
+  right: 25rpx;
+  bottom: 25rpx;
+}
+/* minus、add数量变更 */
+.buy_num {
+  padding: 30rpx 0;
+  margin: 0 30rpx;
+}
+.buy_num .minus_add {
+  display: inline-block;
+}
+.buy_num image{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+
+/* 配送、留言等 */
+.delivery_message {
+  margin: 0 30rpx;
+}
+.delivery_message .delivery {
+  padding: 30rpx 0;
+}
+.delivery .delivery_choose {
+  display: inline-block;
+  margin-left: 273rpx;
+}
+.message {
+  padding: 20rpx 0 60rpx 0;
+}
+.message input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* 小计 */
+.subtotal {
+  margin: 0 30rpx;
+  padding: 30rpx 0;
+}
+.subtotal .detail .sub_price {
+  color: #ff9500;
+}
+
+/* 合计 */
+.total {
+  padding: 40rpx 0;
+  /* background-color: green;
+  opacity: 0.2 */
+}
+.total .total_price {
+  color: #ff9500;
+}
+.total .order_commit {
+  color: #fff;
+  padding: 40rpx 20rpx;
+  margin-left: 20rpx;
+  background-color: #ff9500;
+}

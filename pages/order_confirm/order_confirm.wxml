@@ -1,0 +1,77 @@
+<!--pages/order_confirm/order_confirm.wxml-->
+<view class='page'>
+  <!-- 顶部的收货信息 -->
+  <view class='delivery'>
+    <image class='address_image' src='../../images/order_confirm/address.png'></image>
+    <view class='delivery_info'>
+      <view class='name'>收货人：
+        <input value='{{delivery_info.name}}' bindinput='f_name_input'></input>
+      </view>
+      <view class='phone'>收货电话：
+        <input value='{{delivery_info.phone}}' bindinput='f_phone_input'></input>
+      </view>
+      <view class='address'>收货地址：
+        <input value='{{delivery_info.address}}' bindinput='f_address_input'></input>
+      </view>
+      <view class='tip'>（可到店自取，有精美礼品相送）</view>
+    </view>
+  </view>
+
+  <!-- 小间隙 -->
+  <view class='gap'></view>
+
+  <!-- 所购买书籍的详情 -->
+  <view class='good'>
+    <view class='good_list_item'>
+      <image class='good_image' src='{{good.src}}'></image>
+      <view class='detail'>
+        <view class='title'>{{good.name}}</view>
+        <view>
+          <text class='price'>￥{{good.now_price}}</text>
+          <text class='num'>x{{good_num}}</text>
+        </view>
+      </view>
+      <view class='border_top border_bottom buy_num'>
+        <text>购买数量</text>
+        <view class='fr minus_add'>
+          <image bindtap='f_minus_click' src='../../images/order_confirm/minus.png'></image>
+          {{good_num}}
+          <image bindtap='f_add_click' src='../../images/order_confirm/add.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 配送、留言等 -->
+  <view class='delivery_message'>
+    <view class='border_bottom delivery'>
+      配送方式
+      <view class='delivery_choose'>
+        <text>配送 </text>|<text> 到店自取</text>        
+      </view>
+      <view class='clear'></view>
+    </view>
+
+    <view class='border_bottom message'>
+      买家留言：
+      <input placeholder='选填'></input>
+    </view>
+  </view>
+
+  <!-- 小计 -->
+  <view class='border_bottom subtotal'>
+    <view class='fr detail'>
+      共{{good_num}}件商品 小计: <text class='sub_price'>￥{{good.now_price}}</text>
+    </view>
+    <view class='clear'></view>
+  </view>
+
+  <!-- 合计 -->
+  <view class='total'>
+    <view class='fr'>
+      <text>合计:<text class='total_price'>￥15.00</text></text>
+      <text class='order_commit'>提交订单</text>
+    </view>
+    <view class='clear'></view>
+  </view>
+</view>
