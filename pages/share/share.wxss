@@ -1,0 +1,46 @@
+/* pages/share/share.wxss */
+.good image {
+  width: 750rpx;
+  height: 500rpx;
+}
+/* 价格、书名同一行显示 */
+.good .detail .price,.title {
+  display: inline-block;
+}
+.detail .price {
+  color: #FF9500;
+  font-size: 120rpx;
+  font-weight: 300;
+  /* 这字体似乎没有呀。。。 */
+  /* font-family: PingFangSC-Light  */
+}
+.detail .title {
+  font-size: 50rpx;
+  margin: 25rpx;
+}
+
+.share {
+  position: fixed;
+  bottom: 20rpx;
+  margin: 0 15rpx;
+}
+.share .share_to {
+  margin: 25rpx;
+}
+.share_icon {
+  display: flex;
+  text-align: center;
+}
+.share_icon_item {
+  /* display: inline-block; */
+  width: 180rpx;
+  height: 150rpx;
+}
+.share_icon_item image {
+  width: 100rpx;
+  height: 100rpx;
+  padding: 0 40rpx;
+}
+.share_icon_item image,.title {
+  display: block;
+}
