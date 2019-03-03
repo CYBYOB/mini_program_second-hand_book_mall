@@ -1,0 +1,8 @@
+<!--pages/choose/choose.wxml-->
+<view class='page'>
+  <view class='page_list'>
+    <block wx:for='{{page_list}}'>
+      <text id='{{item.id}}' class='page_list_item' bindtap='f_page_list_item'>点击跳转至 {{item.page_name}} 页面</text>
+    </block>
+  </view>
+</view>

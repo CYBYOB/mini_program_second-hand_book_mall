@@ -1,0 +1,8 @@
+/* pages/choose/choose.wxss */
+
+.page_list .page_list_item {
+  display: block;
+  background-color: red;
+  border-radius: 50rpx;
+  margin: 50rpx;
+}
