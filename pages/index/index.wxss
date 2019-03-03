@@ -1,0 +1,115 @@
+/**index.wxss**/
+/* 顶部搜索栏 */
+.top_search {
+  position: relative;
+  /* width: 750rpx; */
+  height: 150rpx;
+  background-color: #FF9500;
+}
+.top_search .search {
+  position: absolute;
+  width: 650rpx;
+  height: 60rpx;
+  background-color: #eec489;
+  border-radius: 20rpx;
+  top: 45rpx;
+  left: 50rpx;
+}
+.top_search .search image {
+  width: 30rpx;
+  height: 30rpx;
+  margin: 0 20rpx;
+  vertical-align: middle;
+}
+.top_search .search input {
+  width: 580rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/* 轮播图 */
+swiper swiper-item image {
+  width: 750rpx;
+  /* height: 300rpx; */
+}
+
+
+/* 学院分类的书籍 */
+.academic {
+  width: 750rpx;
+  height: 400rpx;
+}
+.academic .academic_item {
+  display: inline-block;
+  width: 150rpx;
+  height: 170rpx;
+  margin: 10rpx 19rpx;
+  text-align: center;
+}
+.academic .academic_item image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+/* 近期热销书籍 */
+.hot_sale {
+  /* position: relative; */
+  height: 100rpx;
+  text-align: center;
+  background-color: #ffa525;
+}
+.hot_sale .text {
+  /* position: absolute; */
+  display: inline-block;
+  vertical-align: middle;
+}
+.hot_sale image {
+  width: 100rpx;
+  height: 100rpx;
+  vertical-align: middle;
+}
+
+/*近期热销书籍的列表 */
+.hot_sale_list {
+  background-color: #e4e4e4;
+}
+.hot_sale_list .hot_sale_item {
+  display: inline-block;
+  width: 350rpx;
+  height: 630rpx;
+  background-color: #fffefe;
+  border: 1rpx #aaa solid;
+  box-shadow: 10rpx 10rpx 5rpx #aaa;
+  margin: 10rpx;
+}
+.hot_sale_item .display_image {
+  width: 350rpx;
+  height: 450rpx;
+  border-radius: 20rpx;
+}
+.hot_sale_item .bottom_detail {
+  margin: 20rpx;
+}
+.hot_sale_item .price {
+  font-size: 40rpx;
+  color: #ff9500;
+  margin-right: 10rpx;
+}
+.hot_sale_item .title {
+  margin: 15rpx 0;
+}
+.hot_sale_item .num_buy {
+  font-size: 30rpx;
+  color: #999;
+}
+.hot_sale_item .bottom_detail {
+  position: relative;
+}
+.hot_sale_item .more {
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  right: 0;
+  top: 80rpx;
+}

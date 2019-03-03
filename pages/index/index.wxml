@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class='page'>
+  <!-- 顶部搜索栏 -->
+  <view class='top_search'>
+    <view class='search'>
+      <image src='../../images/index/search.png'></image>
+      <input placeholder='搜索' bindtap='f_search_tap'></input>
+    </view>
+  </view>
+
+  <!-- 轮播图 -->
+  <swiper indicator-dots='true' autoplay='true' interval='1000' circular='true' >
+    <block wx:for='{{scroll}}'>
+      <swiper-item>
+        <image src='{{item}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!-- 按学院分类 -->
+  <view class='academic'>
+    <block wx:for='{{academic}}'>
+      <view id='{{item.id}}' class='academic_item' bindtap='f_sort_by_academic'>
+        <image id='{{item.id}}' src='{{item.src}}'></image>
+        <view id='{{item.id}}'>{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+
+  <!-- 近期热销书籍 -->
+  <view class='hot_sale'>
+    <view class='text'>近期热销书籍</view>
+    <image src='../../images/index/next.png'></image>
+  </view>
+
+  <!-- 近期热销书籍列表 -->
+  <view class='hot_sale_list'>
+    <block wx:for='{{hot_sale_list}}'>
+      <view id='{{item.id}}' class='hot_sale_item' bindtap='f_navigate_to_good'>
+        <image id='{{item.id}}' class='display_image' src='{{item.src}}'></image>
+        <view class='bottom_detail'>
+          <view id='{{item.id}}' class='title'>{{item.title}}</view>
+          <text id='{{item.id}}' class='price'>￥{{item.price}}</text>
+          <text id='{{item.id}}' class='num_buy'>{{item.num_buy}}人付款</text>
+          <image class='more' src='../../images/index/more.png'></image>
+        </view>
+      </view>
+    </block>
+  </view>
+  
+</view>
