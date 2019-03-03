@@ -6,6 +6,8 @@
 2、当然想玩一些有趣的小程序，可以在微信小程序中搜索  超实用工具箱大全 ，有 古诗生成、撩妹语库、模拟来电等 精彩功能，目前还在不断上线新的功能中，也是个人开发的。 Last but not least, 自己还做了一个微信公众号 （名字是 IT三少 ），曾在半年内 实现 0 到 5.8K 的粉丝增长。里面也有挺多干货教程，类似 软件测评 和 酷玩手机电脑的教程。欢迎来玩~
 
 ## 一、效果如下(录制问题，似乎有些失真了。。。）：
-1、![](https://github.com/CYBYOB/mini_program_second-hand_book_mall/tree/master/effect_of_screenshots/1.gif)
+1、`效果图1`:
+![](https://github.com/CYBYOB/mini_program_second-hand_book_mall/tree/master/effect_of_screenshots/1.gif)
     
-2、![](https://github.com/CYBYOB/mini_program_second-hand_book_mall/blob/master/effect_of_screenshots/2.gif)
+2、效果图2:
+![](https://github.com/CYBYOB/mini_program_second-hand_book_mall/blob/master/effect_of_screenshots/2.gif)
