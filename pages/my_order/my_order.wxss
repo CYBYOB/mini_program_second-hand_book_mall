@@ -1,0 +1,42 @@
+/* pages/my_order/my_order.wxss */
+.my_order_item {
+  border: 1rpx red solid;
+  margin: 25rpx;
+}
+
+
+/* 新的css */
+.order_item {
+  border: 1rpx #eee solid;
+  margin: 30rpx 0;
+}
+.top_detail image {
+  width: 150rpx;
+  height: 150rpx;
+  vertical-align: middle
+}
+
+/* 右边的 书名、运输状态、价格等 */
+.top_detail .right_detail {
+  display: inline-block;
+  vertical-align: middle;
+}
+.right_detail text {
+  margin: 30rpx;
+  /* 上下隔开间距 */
+  line-height: 100rpx; 
+}
+.right_detail .status,.price {
+  color: #ff9500;
+}
+
+/* 底部的 催单 评价等 */
+.bottom_more text {
+  border-radius: 20rpx;
+  border: 3rpx #707070 solid;
+  margin: 20rpx;
+}
+.bottom_more .reminder_evaluate {
+  /* margin: 0 100rpx 30rpx 0; */
+  margin: 20rpx 70rpx;
+}

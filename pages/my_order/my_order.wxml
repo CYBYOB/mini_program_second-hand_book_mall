@@ -1,0 +1,48 @@
+<!--pages/my_order/my_order.wxml-->
+<view class='page'>
+  <!-- <view class='my_order_list'>
+    <view>从数据库中获取到的查询列表：</view>
+    <block wx:for='{{my_order_list}}'>
+      <view class='my_order_item'>
+        <view>商品id: {{item.good_id}}，购买总数量：{{item.total_num}}，购买总价格：{{item.total_price}}</view>
+      </view>
+    </block>
+  </view> -->
+
+
+  <view class='order_list'>
+    <block wx:for='{{order_list}}'>
+      <view class='order_item'>
+        <view class='top_detail'>
+          <image src='../../images/my_order/good.png'></image>
+          <view class='right_detail'>
+            <view class=' fr top'>
+              <text>{{item.title}}</text>
+              <text class='status'>{{item.status}}</text>
+            </view>
+            <!-- 清除浮动 -->
+            <view class='clear'></view>
+
+            <view class='fr buttom'>
+              <text class='price'>{{item.price}}</text>
+              <text>X{{item.num}}</text>
+              <text>合计：￥{{item.total_price}}</text>
+            </view>
+            <!-- 清除浮动 -->
+            <view class='clear'></view>
+
+          </view>
+        </view>
+
+        <view class='bottom_more'>
+          <view class='fr reminder_evaluate'>
+            <text bindtap='f_once_again'>再来一单</text>
+            <text bindtap='f_reminder'>催单</text>
+            <text bindtap='f_evaluate'>评价</text>
+          </view>
+          <view class='clear'></view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
