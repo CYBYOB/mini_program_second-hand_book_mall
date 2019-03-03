@@ -1,0 +1,27 @@
+<!--pages/edit_address/edit_address.wxml-->
+<view class='page'>
+  <view class='edit_info'>
+    <view>收货人：<input value='{{name}}'></input></view>
+    <view>收货电话：<input value='{{phone}}'></input></view>
+    <view>收货地址：<input value='{{address}}'></input></view>
+  </view>
+
+  <!-- 设置两个间的 间隔 -->
+  <view class='gap' style='height:50rpx;'></view>
+
+  <view class='set_delete'>
+    <view class='set'>
+      <text>设为默认地址</text>
+      <switch class='fr' checked='true'></switch>
+      <view class='clear'></view>
+    </view>
+    
+    <view class='delete'>
+      删除地址
+    </view>
+  </view>
+
+  <view class='save'>
+      <text>保存</text>
+  </view>
+</view>

@@ -1,0 +1,51 @@
+/* pages/edit_address/edit_address.wxss */
+
+.edit_info {
+  margin: 30rpx;
+}
+/* 收获的三个编辑项 input 都是 行内块 */
+.edit_info view {
+  color: rgba(153, 153, 153, 1);
+  border-bottom: 3rpx #eee solid; 
+  vertical-align: middle;
+}
+.edit_info input {
+  color: rgba(85, 85, 85, 1);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.set_delete {
+  margin: 30rpx;
+}
+.set_delete .set,.delete {
+  border-bottom: 3rpx #eee solid;
+}
+/* 设置了没起作用？？！！ */
+/* .set text{
+  vertical-align: middle;
+}
+.set switch {
+  vertical-align: middle;
+} */
+
+.set_delete .delete {
+  text-align: center;
+  color: #FB4E4E;
+  padding: 20rpx 0;
+}
+
+
+.save {
+  position: fixed;
+  left: 175rpx;
+  bottom: 50rpx;
+  text-align: center;
+}
+.save text {
+  color: #fff;
+  background-color: #ff9500;
+  padding: 20rpx 150rpx;
+  border-radius: 40rpx;
+  border: 3rpx ;
+}
