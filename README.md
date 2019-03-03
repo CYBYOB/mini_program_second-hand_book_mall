@@ -8,6 +8,4 @@
 ## 一、效果如下(录制问题，似乎有些失真了。。。）：
 1、![](https://github.com/CYBYOB/mini_program_second-hand_book_mall/tree/master/effect_of_screenshots/1.gif)
     
-2、![](https://github.com/CYBYOB/mini_program_second-hand_book_mall/blob/master/effect_of_screenshots/1.gif)
-
-3、![](http://www.baidu.com/img/bdlogo.gif)
+2、![](https://github.com/CYBYOB/mini_program_second-hand_book_mall/blob/master/effect_of_screenshots/2.gif)
