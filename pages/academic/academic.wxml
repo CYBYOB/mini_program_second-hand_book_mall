@@ -1,0 +1,13 @@
+<!--pages/academic/academic.wxml-->
+<view class='page'>
+  <view>学院id:{{academic_id}}</view>
+  <view>从数据库中获取的列表如下：</view>
+  <view class='academic_good_list'>
+    <block wx:for='{{academic_good_list}}'>
+      <view class='academic_good_item'>
+        <view>书名：{{item.name}},价格：{{item.now_price}},销量： {{item.sale_num}}</view>
+        <image src='{{item.src}}'></image>
+      </view>
+    </block>
+  </view>
+</view>

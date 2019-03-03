@@ -1,0 +1,6 @@
+/* pages/academic/academic.wxss */
+
+.academic_good_item {
+  border: 1rpx red solid;
+  margin: 25rpx;
+}
