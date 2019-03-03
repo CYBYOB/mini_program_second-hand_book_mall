@@ -1,0 +1,55 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/map_gaode/map_gaode",
+    "pages/map/map",
+    "pages/login/login",
+    "pages/me/me",
+    "pages/my_address/my_address",
+    "pages/edit_address/edit_address",
+    "pages/my_order/my_order",
+    "pages/good/good",
+    "pages/order_confirm/order_confirm",
+    "pages/search/search",
+    "pages/academic/academic",
+    "pages/my_point/my_point",
+    "pages/my_collect/my_collect",
+    "pages/point_map/point_map",
+    "pages/share/share",
+    "pages/choose/choose",
+    "pages/concern/concern",
+    "pages/contact/contact",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#ff9500",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/index.png",
+      "selectedIconPath": "images/index_s.png"
+    },{
+      "pagePath": "pages/concern/concern",
+      "text": "关注",
+      "iconPath": "images/concern.png",
+      "selectedIconPath": "images/concern.png"
+    },{
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "images/me.png",
+      "selectedIconPath": "images/me_s.png"
+    }]
+  },
+  "debug": true,
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}
